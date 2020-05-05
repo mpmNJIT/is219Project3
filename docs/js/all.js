@@ -1,15 +1,12 @@
 (function ($) {
     $('#citiesTable').DataTable( {
-        "ajax": "http://localhost:9080/api/v1/cities",
+        "ajax": "http://localhost:9080/api/v1/oscar",
         "columns": [
-            { "data": "id" },
-            { "data": "fldName" },
-            { "data": "fldLat" },
-            { "data": "fldLong" },
-            { "data": "fldCountry" },
-            { "data": "fldAbbreviation" },
-            { "data": "fldCapitalStatus" },
-            { "data": "fldPopulation" }
+            { "data": "Index" },
+            { "data": "Year" },
+            { "data": "Age" },
+            { "data": "Name" },
+            { "data": "Movie" }
 
         ]
     } );
