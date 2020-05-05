@@ -1,15 +1,15 @@
 CREATE DATABASE oscarData;
 use oscarData;
 
-CREATE TABLE oscar_age_female (
+CREATE TABLE IF NOT EXISTS oscar_age_female (
     `Index` INT,
     `Year` INT,
     `Age` INT,
-    `Name` VARCHAR(22) CHARACTER SET utf8,
-    `Movie` VARCHAR(60) CHARACTER SET utf8,
+    `Name` VARCHAR(64) CHARACTER SET utf8,
+    `Movie` VARCHAR(128) CHARACTER SET utf8,
     PRIMARY KEY (`Index`)
 );
-INSERT INTO oscar_age_female VALUES
+INSERT INTO oscar_age_female (`Index`,Year,Age,Name,Movie) VALUES
 ( 1, 1928, 22,' "Janet Gaynor"',' "Seventh Heaven Street Angel and Sunrise: A Song of Two Humans"'),
 ( 2, 1929, 37,' "Mary Pickford"',' "Coquette"'),
 ( 3, 1930, 28,' "Norma Shearer"',' "The Divorcee"	'),
