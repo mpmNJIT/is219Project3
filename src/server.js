@@ -11,9 +11,9 @@ app.get('/api/v1/oscar', function(req, res) {
     const mysql = require('mysql');
     const connection = mysql.createConnection({
         host: 'localhost',
-        port: '32222',
-        user: 'oscarroot',
-        password: 'oscarroot',
+        port: '32000',
+        user: 'root',
+        password: 'root',
         database: 'oscarData'
     });
     connection.connect();
